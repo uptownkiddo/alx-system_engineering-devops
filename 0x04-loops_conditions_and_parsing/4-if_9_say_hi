@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#while and if for best school 10 times with hi on 9th iteratiion
 
 counter=1
 

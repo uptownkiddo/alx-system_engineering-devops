@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+#using while to print best school 10 times
+
 counter=0
 
 while [ $counter -lt 10 ]

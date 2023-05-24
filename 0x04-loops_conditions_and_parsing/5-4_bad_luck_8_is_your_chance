@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#itearation 10 times with various mesages at diff iterations
 
 counter=1
 
