@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+if [ "$#" -lt 4 ]; then
+	echo "Usage: $0 PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
+	exit 1
+fi
+
+#the parameters
+path_to_file = 
+server_ip =
+username =
+ssh_key =
+
+#Disable strict host key checking
+scp_options = "-o StrictHostKeyChecking=no"
+
+#Transfer file using scp
+scp $scp_options -i "$ssh_key" "$path_to_file" "$username@server_ip:~/"
+echo "File trenasfered to $username@server_ip:~/"
